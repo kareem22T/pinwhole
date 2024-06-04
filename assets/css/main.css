@@ -567,4 +567,108 @@ tr:last-child td {
   border: none;
 }
 
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.register_form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register_form img {
+  width: 200px;
+  object-fit: contain;
+}
+.register_form p {
+  color: #fff;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.register_form .input-group {
+  width: 100%;
+}
+.register_form .input_wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.register_form .input_wrapper input {
+  background-color: white;
+  border: 1px solid white;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 16px;
+  padding-left: 48px;
+}
+.register_form .input_wrapper input:focus {
+  border: 1px solid #ee2d34;
+  outline: none;
+}
+.register_form .input_wrapper svg {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  stroke: #000;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.register_form button {
+  background: rgb(17, 10, 6);
+  background: linear-gradient(90deg, rgb(17, 10, 6) 0%, rgb(68, 28, 19) 100%);
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 16px;
+  color: #fff;
+  border: none;
+  width: 100%;
+  transition: background-color 0.4s ease-in;
+}
+.register_form button:hover {
+  background: linear-gradient(90deg, rgb(17, 10, 6) 0%, rgb(17, 10, 6) 100%);
+}
+.register_form a {
+  color: #fff;
+  margin-top: 16px;
+}
+
+.form_login {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  object-fit: contain;
+}
+@media (max-width: 700px) {
+  .form_login {
+    grid-template-columns: 1fr;
+  }
+}
+.form_login .form_wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  background: #c94933;
+}
+@media (max-width: 700px) {
+  .form_login > div:first-child {
+    display: none;
+  }
+}
+.form_login > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=main.css.map */
