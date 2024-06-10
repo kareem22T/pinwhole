@@ -381,6 +381,23 @@ main .content_fluid {
     margin-left: 16px;
   }
 }
+input {
+  background-color: #f4f4f4;
+  border: 1px solid #b1b1b1;
+  border-radius: 12px;
+  padding: 12px 40px 12px 16px;
+}
+@media (max-width: 799.98px) {
+  input {
+    width: 150px;
+  }
+}
+input:focus {
+  outline: none;
+  border-color: #ee2d34;
+  border-width: 2px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -395,22 +412,6 @@ main .content_fluid {
 }
 .header .search_form {
   position: relative;
-}
-.header .search_form input {
-  background-color: #f4f4f4;
-  border: 1px solid #b1b1b1;
-  border-radius: 12px;
-  padding: 12px 40px 12px 16px;
-}
-@media (max-width: 799.98px) {
-  .header .search_form input {
-    width: 150px;
-  }
-}
-.header .search_form input:focus {
-  outline: none;
-  border-color: #ee2d34;
-  border-width: 2px;
 }
 .header .search_form svg {
   stroke: #b1b1b1;
